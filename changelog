@@ -5,5 +5,5 @@ Done:
 * ThaiBreakIterator implementation is finished
 
 Next:
-* Write tests for ThaiBreakIterator
+* Incorporate RuleBasedBreakIterator
 * Implement ThaiBreakIterator.next(int n) and ThaiBreakIterator.following(int offset)

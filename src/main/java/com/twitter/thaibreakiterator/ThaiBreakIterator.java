@@ -138,6 +138,16 @@ public class ThaiBreakIterator extends BreakIterator {
   public void tokenize() {
     size = currentText.getEndIndex();
 
+    _scores.clear();
+    _startings.clear();
+    _characters.clear();
+
+    for (int i = 0;i < size; i++) {
+      _scores.add(Integer.MIN_VALUE);
+      _startings.add(-1);
+      _characters.add(' ');
+    }
+
     // Here is the dynamic programming approach
     // for finding the optimal tokenization that:
     //   (1) matches words in dictionary with best effort
@@ -159,6 +169,7 @@ public class ThaiBreakIterator extends BreakIterator {
         int previousScore = j == 0 ? 0 : _scores.get(j - 1);
 
         _characters.set(j, currentText.current());
+        trie.next(currentText.current());
         currentText.previous();
 
         int thisScore = previousScore + assign(j, i);
@@ -211,7 +222,6 @@ public class ThaiBreakIterator extends BreakIterator {
     if (isForbidden(start, end)) {
       return MINUS_INFINITY;
     } else {
-      trie.next(_characters.get(start));
       return trie.isEnd() ? end - start + 1 : 0;
     }
   }

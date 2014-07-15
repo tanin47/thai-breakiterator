@@ -1,4 +1,4 @@
-name := "thai-tokenizer"
+name := "thai-breakiterator"
 
 organization := "com.twitter"
 
@@ -9,3 +9,5 @@ publishMavenStyle := true
 crossPaths := false
 
 autoScalaLibrary := false
+
+libraryDependencies += "com.novocode" % "junit-interface" % "0.10" % "test"
