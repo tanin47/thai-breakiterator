@@ -1,0 +1,9 @@
+14 July 2014
+--------------
+
+Done:
+* ThaiBreakIterator implementation is finished
+
+Next:
+* Write tests for ThaiBreakIterator
+* Implement ThaiBreakIterator.next(int n) and ThaiBreakIterator.following(int offset)
