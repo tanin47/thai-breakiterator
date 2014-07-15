@@ -1,4 +1,4 @@
-package com.twitter.thaitokenizer;
+package com.twitter.thaibreakiterator;
 
 public class OurBreakIterator {
   static long getLong(byte[] buf, int offset) {

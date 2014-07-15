@@ -1,4 +1,4 @@
-package com.twitter.thaitokenizer;
+package com.twitter.thaibreakiterator;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;

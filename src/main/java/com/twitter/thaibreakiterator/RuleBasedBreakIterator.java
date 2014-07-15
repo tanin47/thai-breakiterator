@@ -38,14 +38,10 @@
 * Taligent is a registered trademark of Taligent, Inc.
 */
 
-package com.twitter.thaitokenizer;
+package com.twitter.thaibreakiterator;
 
-import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
 import java.text.BreakIterator;
 import java.util.MissingResourceException;
 import java.text.CharacterIterator;
