@@ -21,7 +21,7 @@ public class ComparisonTest {
 
     thaiBreaker = new ThaiBreakIterator(
       null,
-      new Trie(Trie.readWords(getClass().getResourceAsStream("/thaidict_icu_52_1.txt")))
+      new Trie(Trie.readWords(getClass().getResourceAsStream("/thaidict_icu_53_1.txt")))
     );
 
     jdkBreaker = BreakIterator.getWordInstance(Locale.forLanguageTag("th"));
@@ -87,7 +87,9 @@ public class ComparisonTest {
       "วันนี้ตอนเช้าพาลูกชายสองคนไปปั่นจักรยานภูเขาที่ราบ 11 มาครับ สนุกมากแต่โหดหน่อยๆ สำหรับเด็ก ค่อยๆไปได้",
       "กรมวิทย์ฯ เตือนโรคพิษสุนัขบ้า เป็นแล้วตาย 100%",
       "สามีต่างชาติยิงภรรยา 'กฤตยา ล่ำซำ' ก่อนยิงตัวตายดับคาคอนโดหรูฯ",
-      "ดเวย์น จอห์นสัน อาจเป็น Shazam ในหนังซูเปอร์ฮีโร่เรื่องใหม่ของวอร์เนอร์ฯ"
+      "ดเวย์น จอห์นสัน อาจเป็น Shazam ในหนังซูเปอร์ฮีโร่เรื่องใหม่ของวอร์เนอร์ฯ",
+      "มากกกกกกกกกกก",
+      "บ่อยๆๆๆๆๆๆๆๆๆๆ"
     };
 
     for (String text: texts) {
