@@ -1,8 +1,8 @@
 ThaiBreakIterator
 ====================
 
-A better ThaiBreakIterator implemented with a dynamic programming approach.
-It is easier to add more rules to it.
+A better ThaiBreakIterator implemented with a dynamic programming approach,
+which is easier to customize rules.
 
 Please see `changelog` for recent updates.
 
