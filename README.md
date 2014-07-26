@@ -4,7 +4,7 @@ ThaiBreakIterator
 A better ThaiBreakIterator implemented with a dynamic programming approach,
 which is easier to customize rules.
 
-Please see `changelog` for recent updates.
+Please see `CHANGELOG.md` for recent updates.
 
 
 How to use it
