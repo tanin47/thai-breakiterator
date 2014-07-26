@@ -14,7 +14,6 @@ TODO
 25 July 2014
 ----------------
 
-Done:
 * Incorporate RuleBasedBreakIterator
 * Change back to use Array. ArrayList seems to be a premature optimization
 * Test Framework (e.g. between ThaiBreakIterator and ICU's BreakIterator
