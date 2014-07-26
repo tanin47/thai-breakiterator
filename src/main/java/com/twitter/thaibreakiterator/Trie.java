@@ -2,6 +2,7 @@ package com.twitter.thaibreakiterator;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -19,19 +20,22 @@ public class Trie {
 
   public Trie(Iterable<String> words) throws IOException {
     if (words == null) {
-      BufferedReader reader = new BufferedReader(
-          new InputStreamReader(getClass().getResourceAsStream("/thaidict.txt")));
-      HashSet<String> tmpWords = new HashSet<>();
-
-      String line;
-      while ((line = reader.readLine()) != null) {
-        tmpWords.add(line.trim());
-      }
-
-      words = tmpWords;
+      words = readWords(getClass().getResourceAsStream("/thaidict_latest.txt"));
     }
 
     buildTrie(words);
+  }
+
+  public static Iterable<String> readWords(InputStream in) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+    HashSet<String> tmpWords = new HashSet<>();
+
+    String line;
+    while ((line = reader.readLine()) != null) {
+      tmpWords.add(line.trim());
+    }
+
+    return tmpWords;
   }
 
   protected void buildTrie(Iterable<String> words) {

@@ -10,4 +10,7 @@ crossPaths := false
 
 autoScalaLibrary := false
 
-libraryDependencies += "com.novocode" % "junit-interface" % "0.10" % "test"
+libraryDependencies ++= Seq(
+  "com.novocode" % "junit-interface" % "0.10" % "test",
+  "com.ibm.icu" % "icu4j" % "52.1" % "test"
+)
