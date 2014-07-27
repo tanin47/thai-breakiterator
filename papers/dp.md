@@ -35,4 +35,8 @@ Future work
 Conclusion
 --------------
 
-Our dynamic-programming approach is easier to understand, better in quality, and more extensible.
+- Our dynamic-programming approach is easier to understand, better in quality, and more extensible.
+- Which cases are better? And why?
+- Which cases are worse or equally good? And why?
+- Performance?
+- Incorporate probabilistic models to facilitates the ambiguity and the unknown is a natural next step.
